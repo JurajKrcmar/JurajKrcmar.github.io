@@ -1,65 +1,38 @@
 <!doctype html>
-<h3>Motto</h3>
-<p><em>„Staň sa spolumajiteľom budúcnosti za 1 € ročne.“</em></p>
-</section>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OneRight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>OneRight</h1>
+      <p class="tagline">Jednoduchý spôsob, ako mať každý deň aspoň jeden správny krok.</p>
+    </header>
 
+    <main>
+      <section class="card">
+        <h2>Čoskoro spúšťame</h2>
+        <p>Staviam(e) OneRight – malú web appku na zapisovanie a zdieľanie „rights“ (malé správne kroky). 
+        Táto stránka je dočasná landing page.</p>
+      </section>
 
-<!-- Ako to funguje -->
-<section id="how">
-<h2>Ako to funguje</h2>
-<div class="grid-2">
-<div class="card">
-<h3 style="margin-top:0">1) Symbolický príspevok</h3>
-<p>Členstvo stojí <strong>1 € ročne</strong>. Dobrovoľne môžeš prispieť aj viac.</p>
-</div>
-<div class="card">
-<h3 style="margin-top:0">2) Transparentnosť</h3>
-<p>Každý vidí, kam išlo každé euro. Pravidelné reporty a otvorené účtovanie.</p>
-</div>
-</div>
-<div class="card" style="margin-top:16px">
-<h3 style="margin-top:0">3) Spoločné rozhodovanie</h3>
-<p>Komunita hlasuje o projektoch – spolu vyberáme, čo podporíme najbližšie.</p>
-</div>
-</section>
+      <section class="card">
+        <h2>Zostaň v kontakte</h2>
+        <p>Napíš nám: <a href="mailto:info@oneright.example">info@oneright.example</a></p>
+      </section>
+    </main>
 
-
-<!-- CTA pridať sa -->
-<section id="join" class="card" style="margin-top:24px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
-<div>
-<h2 style="margin:0 0 6px">Pridaj sa k OneRight</h2>
-<p class="lead" style="margin:0">Stačí 1 € ročne. Spolu rozhodujeme, spolu pomáhame.</p>
-</div>
-<div style="display:flex; gap:10px; flex-wrap:wrap; margin:0">
-<a class="btn primary" href="mailto:info@oneright.sk?subject=Chcem%20sa%20prida%C5%A5%20k%20OneRight">Chcem sa pridať</a>
-<a class="btn" href="mailto:info@oneright.sk?subject=Ot%C3%A1zky%20k%20OneRight">Mám otázky</a>
-</div>
-</section>
-<!-- Prihlásenie (statické) -->
-<section id="login" class="card" style="margin-top:24px; max-width:560px">
-<h2 style="margin-top:0">Prihlásenie</h2>
-<p class="lead" style="margin:0 0 10px">Zatiaľ len ukážkový formulár (bez ukladania údajov).</p>
-<form onsubmit="event.preventDefault(); alert('Toto je demo prihlásenie. Integrácia príde neskôr.');">
-<label>E‑mail<br>
-<input type="email" required style="width:100%; padding:10px; border:1px solid var(--border); border-radius:10px; margin:6px 0 10px">
-</label>
-<label>Heslo<br>
-<input type="password" required minlength="6" style="width:100%; padding:10px; border:1px solid var(--border); border-radius:10px; margin:6px 0 16px">
-</label>
-<button class="btn primary" type="submit">Prihlásiť sa</button>
-<a class="btn" href="#join" style="margin-left:8px">Nemám účet – pridať sa</a>
-</form>
-</section>
-</main>
-
-
-<footer>
-© <span id="year"></span> OneRight, o.z. – Všetky práva vyhradené.
-</footer>
-
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+    <footer>
+      <small>© <span id="y"></span> OneRight</small>
+    </footer>
+  </div>
+  <script>
+    // doplní aktuálny rok do pätičky
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
