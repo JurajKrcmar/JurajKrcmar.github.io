@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OneRight</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="štýl.css">
 </head>
 <body>
   <div class="wrap">
@@ -16,23 +16,50 @@
     <main>
       <section class="card">
         <h2>Čoskoro spúšťame</h2>
-        <p>Staviam(e) OneRight – malú web appku na zapisovanie a zdieľanie „rights“ (malé správne kroky). 
-        Táto stránka je dočasná landing page.</p>
+        <p>Staviam(e) OneRight – malú webovú aplikáciu na zapisovanie a zdieľanie „rights“ (malé správne kroky).
+        Táto stránka je dočasná vstupná stránka. 🙂</p>
       </section>
 
       <section class="card">
-        <h2>Zostaň v kontakte</h2>
-        <p>Napíš nám: <a href="mailto:info@oneright.example">info@oneright.example</a></p>
+        <h2>Motto</h2>
+        <p><em>„Staň sa spolumajiteľom budúcnosti za 1 € ročne.“</em></p>
+      </section>
+
+      <section class="card">
+        <h2>Ako to funguje</h2>
+        <h3>1) Symbolický príspevok</h3>
+        <p>Členstvo stojí <strong>1 € ročne</strong>. Dobrovoľne môžeš prispieť aj viac.</p>
+
+        <h3>2) Transparentnosť</h3>
+        <p>Každý vidí, kam išlo každé euro. Pravidelné reporty a otvorené účtovanie.</p>
+
+        <h3>3) Spoločné rozhodovanie</h3>
+        <p>Komunita hlasuje o projektoch – spolu vyberáme, čo podporíme najbližšie.</p>
+      </section>
+
+      <section class="card">
+        <h2>Pridaj sa k OneRight</h2>
+        <p>Stačí 1 € ročne. Spolu rozhodujeme, spolu pomáhame.</p>
+      </section>
+
+      <section class="card">
+        <h2>Prihlásenie</h2>
+        <p>Zatiaľ len ukážkový formulár (bez ukladania údajov).</p>
+        <form>
+          <label for="email">E-mail</label><br>
+          <input type="email" id="email" name="email"><br><br>
+
+          <label for="password">Heslo</label><br>
+          <input type="password" id="password" name="password"><br><br>
+
+          <button type="submit">Prihlásiť sa</button>
+        </form>
       </section>
     </main>
 
     <footer>
-      <small>© <span id="y"></span> OneRight</small>
+      <p>&copy; 2025 OneRight – všetky práva vyhradené</p>
     </footer>
   </div>
-  <script>
-    // doplní aktuálny rok do pätičky
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
